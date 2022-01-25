@@ -1,0 +1,82 @@
+<%- include ("partials/header.ejs") %>
+
+<body>
+    
+    <%- include ("partials/navbar.ejs") %>
+    <div class="container bg-dark"> 
+        <div class="card bg-dark" id="formulario-pedido">
+            <br>
+                <br>
+            <div class="class-header bg-dark"> 
+                
+                <h3>    Realize seu Pedido.</h3>
+                 <hr>          
+            </div>
+
+            <div class="card-body bg-dark btn-dark">
+                <form method="POST" action="/fazerpedido">
+                    
+                    <label>Digite seu nome.</label>
+                    <input type= "text" placeholder="Nome" class="form-control" name="nome">
+                    <br>
+
+                    <p><label>Escolha seu risoto.</label></p>
+                    <div class="input_fields_wrap">
+                        <button class="add_field_button btn-dark">Adicionar mais um</button>
+                        <br>
+                        <br>
+                        <div>
+                            <select name="risoto1" id="sabor">
+                                    <optgroup label="Risotos">
+                                        <option value="camaraobacon">Risoto de Camarão com Bacon - 65.00</option>
+                                        <option value="mignongorgonzola">Risoto de Filé Mignon com Gorgonzola - 65.00</option>
+                                        <option value="cogumelos">Risoto de Cogumelos - 65.00</option>
+                                        <option value="polvo">Risoto de Polvo - 65.00</option>
+                                        <option value="briedamascos">Risoto de Brie com Damascos - 55.00</option>
+                                        <option value="baconabacaxi">Risoto de Bacon e Gorgonzola com Abacaxi Caramelizado - 55.00</option>
+                                    </optgroup>
+                            </select>
+                            <select name="quantidade1" aria-label="quantidade">
+                                 <option value="1">1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                                 <option value="4">4</option>
+                                 <option value="5">5</option>
+                            </select>
+                         </div>
+                    </div>
+                    <br>
+                    <label>Digite o seu vinho.</label> 
+                    <br>
+                    <select class="form-select-sm" name="vinho" aria-label="Escolha seu vinho">
+                        <option selected>Escolha seu vinho</option>
+                        <option value="Catena">DV Catena - 158.00</option>
+                        <option value="GranReserva">Anciano Gran Reserva - 98.00</option>
+                        <option value="VillaMatilde">Villa Matilde - 125.00</option>
+                      </select>
+                    
+                    <br>
+                    <br>
+
+                    <label>Digite o seu Telefone.</label>
+                    <br>
+                    <input class="form-control-sm" name="telefone" type="text" placeholder="Seu telefone">                  
+                    <br>
+                    <br>
+                    <label>Informe seu endereço completo.</label>
+                    <textarea placeholder="Informe seu Endereço." class="form-control" name="endereco"></textarea><br>
+
+                    <p> Caso deseje mais de um risoto favor enumerar com a quantidade na frente. <br>Obrigado!</p>
+
+                    <button class="btn btn-dark">Enviar</button> 
+                </form>
+            </div>
+            </div>
+             <button class="btn btn-dark"><a href="/" style="text-decoration:none"> Voltar </a></button> 
+             <button class="btn btn-dark"><a href="/" style="text-decoration:none"> Fazer outro pedido </a></button>
+        
+
+       
+    </div>
+</body>
+<%- include ("partials/footer.ejs") %>

@@ -1,0 +1,65 @@
+body {
+    background-color: rgb(10, 10, 10);
+            
+}
+link { 
+    color: gray;
+    
+}
+h3,li, label { 
+    color: whitesmoke;
+}
+
+h1 { 
+    color: burlywood;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.card-group {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 985px) { 
+.card-group {   
+    flex-direction: column;  
+    margin-left: 0px;
+    border-left: 0px;
+    } 
+}
+
+.cardapio { 
+    background-color: rgb(61, 61, 60);
+    margin: auto;
+    width: 850px;
+    height: 500px;
+    color: lightgray;
+    padding: 30px;
+    margin-top: 30px;
+    padding-left: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px grey;
+}
+
+.blockquote { 
+    border-radius: 20px;
+    width: 800px;
+    padding: 0 15px;
+    box-shadow: 2px 2px 0 rgb(110, 97, 97);
+}
+
+
+.title h1 { 
+    color: rgb(238, 233, 231);
+    font: 700;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 20px;
+    font-display: 10px
+}
+.blockquote-footer { 
+    padding-top: 8px;
+    color: whitesmoke;
+}
